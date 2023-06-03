@@ -23,4 +23,5 @@ class Student(models.Model):
         verbose_name_plural = 'Ученики'
 
     def __str__(self):
+
         return self.name
