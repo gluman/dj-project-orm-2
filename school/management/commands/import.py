@@ -6,7 +6,14 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         with open('school.json') as f:
-            pass
-            # TO DO
+            data = json.load(f)
+            for record in data:
+                person = {
+                    'model': ,
+                    'shop': Shop,
+                    'book': Book,
+                    'stock': Stock,
+                    'sale': Sale,
+                }[record.get()]
             return print('done')
 
