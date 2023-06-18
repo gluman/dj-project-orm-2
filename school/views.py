@@ -8,9 +8,6 @@ def students_list(request):
     template = 'school/students_list.html'
     context = {
 
-
-
-
     }
 
 
