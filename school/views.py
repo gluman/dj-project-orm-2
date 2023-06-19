@@ -1,13 +1,16 @@
 from django.views.generic import ListView
 from django.shortcuts import render
+from school.models import Student, Teacher
 
-from .models import Student,Teacher
 
 
 def students_list(request):
     template = 'school/students_list.html'
-    context = {
+    student_objects = Student.objects.all()
+    teachers_objects = Teacher.objects.all()
 
+    context = {'student_objects': student_objects,
+               'teachers_objects': teachers_objects,
     }
 
 
